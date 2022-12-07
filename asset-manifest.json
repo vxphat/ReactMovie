@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c207d51.css",
-    "main.js": "/static/js/main.b7608a72.js",
-    "static/media/astronaut.png": "/static/media/astronaut.88e84646aefe83dd7e00.png",
-    "static/media/bg-shape-1.png": "/static/media/bg-shape-1.752db224ce0af1dad07a.png",
-    "static/media/bg-shape-2.png": "/static/media/bg-shape-2.cd2c960ddb673e3da039.png",
-    "static/media/camera.png": "/static/media/camera.28441d62ba8d7f0482c5.png",
-    "static/media/avatar-default.png": "/static/media/avatar-default.265fb4b6d72205f42bfb.png",
-    "index.html": "/index.html",
-    "main.1c207d51.css.map": "/static/css/main.1c207d51.css.map",
-    "main.b7608a72.js.map": "/static/js/main.b7608a72.js.map"
+    "main.css": "/ReactMovie/static/css/main.038223db.css",
+    "main.js": "/ReactMovie/static/js/main.b7f8f3ad.js",
+    "static/media/astronaut.png": "/ReactMovie/static/media/astronaut.88e84646aefe83dd7e00.png",
+    "static/media/bg-shape-1.png": "/ReactMovie/static/media/bg-shape-1.752db224ce0af1dad07a.png",
+    "static/media/bg-shape-2.png": "/ReactMovie/static/media/bg-shape-2.cd2c960ddb673e3da039.png",
+    "static/media/camera.png": "/ReactMovie/static/media/camera.28441d62ba8d7f0482c5.png",
+    "static/media/avatar-default.png": "/ReactMovie/static/media/avatar-default.265fb4b6d72205f42bfb.png",
+    "index.html": "/ReactMovie/index.html",
+    "main.038223db.css.map": "/ReactMovie/static/css/main.038223db.css.map",
+    "main.b7f8f3ad.js.map": "/ReactMovie/static/js/main.b7f8f3ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c207d51.css",
-    "static/js/main.b7608a72.js"
+    "static/css/main.038223db.css",
+    "static/js/main.b7f8f3ad.js"
   ]
 }
