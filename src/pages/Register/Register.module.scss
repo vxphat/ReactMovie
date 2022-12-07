@@ -1,0 +1,139 @@
+.background {
+    background-image: url('../../assets/images/bg-shape-2.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 20%;
+    background-color: var(--bg-color);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px 60px;
+    background-image: url('../../assets/images/bg-shape-1.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 20%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+
+    h1 {
+        color: var(--link-color);
+        font-size: 4rem;
+    }
+}
+
+.link {
+    color: var(--link-color);
+    font-size: 1.4rem;
+    margin: 0 4px;
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--link-hover-color);
+    }
+}
+
+// form container
+.container {
+    width: min(450px, 100%);
+    padding: 48px;
+    border-radius: 12px;
+    background-color: var(--bg-light-color);
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+
+    @media (max-width:576px) {
+        & {
+            padding: 20px;
+        }
+    }
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+
+        @media (max-width:576px) {
+            & {
+                flex-direction: column;
+            }
+        }
+
+        h3 {
+            color: var(--heading-color);
+            font-size: 2.4rem;
+        }
+
+        span {
+            color: var(--text-light-color);
+            font-size: 1.4rem;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .errorMess {
+        color: var(--error-color);
+        font-size: 1.2rem;
+        margin: -8px 0 0 16px;
+    }
+}
+
+// config 
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .accept {
+        display: flex;
+        align-items: flex-start;
+        color: var(--text-light-color);
+        line-height: 2rem;
+
+        input {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            margin-right: 12px;
+            height: 2rem;
+        }
+
+    }
+}
+
+// button
+.submit {
+    height: 36px;
+    padding: 5px 16px;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 6px;
+    background-color: var(--button-color);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--button-hover-color);
+    }
+
+    &.disable {
+        background-color: var(--button-disable-color);
+        cursor: default;
+    }
+}

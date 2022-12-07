@@ -1,0 +1,107 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    flex-shrink: 0;
+    height: 100vh;
+    overflow-y: overlay;
+    background-color: var(--bg-color);
+
+    // Tablet
+    @media (max-width: 992px) {
+        & {
+            width: 60px;
+        }
+
+        &.expand {
+            width: 260px;
+        }
+
+        & .logoWrapper {
+            padding: 8px 10px;
+        }
+
+        &.expand .logoWrapper {
+            padding: 8px 30px;
+        }
+    }
+}
+
+.sidebarToggleBtn {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-left: 8px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    // Tablet
+    @media (max-width: 992px) {
+        & {
+            display: flex;
+        }
+    }
+}
+
+.sidebarToggleBtn:after,
+.sidebarToggleBtn:before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.sidebarToggleBtn:after {
+    transform: translateY(-5px);
+}
+
+.sidebarToggleBtn:before {
+    transform: translateY(5px);
+}
+
+.active.sidebarToggleBtn:after {
+    transform: translateY(0) rotate(-405deg);
+}
+
+.active.sidebarToggleBtn::before {
+    transform: translateY(0) rotate(405deg);
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    // gap: 12px;
+    padding: 15px 30px;
+    letter-spacing: 0.00075em;
+    line-height: 1.6;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+
+    // .logo {
+    //     width: 40px;
+    // }
+
+    strong {
+        font-size: 2.7rem;
+        color: #ff6600;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+    }
+    p{
+        color: #000000;
+        font-weight: 300;
+    }
+}
+
+.menu {
+    padding: 16px;
+    flex: 1;
+    overflow-y: overlay;
+}
+

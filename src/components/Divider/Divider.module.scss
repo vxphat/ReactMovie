@@ -1,0 +1,138 @@
+.divider {
+    flex-shrink: 0;
+    border-color: var(--border-color);
+    font-size: 1.6rem;
+
+    &.horizontal:not(.content) {
+        justify-self: stretch;
+        border-width: 1px 0 0 0;
+        margin: 4px 0;
+
+        &.middle {
+            margin: 0px 8px;
+        }
+    }
+
+    &.horizontal.content {
+        display: flex;
+        flex-shrink: 0;
+        justify-self: stretch;
+        white-space: nowrap;
+        text-align: center;
+
+        span {
+            padding: 0 0.2em;
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            position: relative;
+            width: 100%;
+            top: 50%;
+            border-left: 1px solid var(--border-color);
+        }
+
+        &.left {
+            &::before {
+                width: 10%;
+            }
+
+            &::after {
+                width: 90%;
+            }
+        }
+
+        &.center {
+            &::before {
+                width: 100%;
+            }
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        &.right {
+            &::before {
+                width: 90%;
+            }
+
+            &::after {
+                width: 10%;
+            }
+        }
+
+        &.middle {
+            margin: 0px 8px;
+        }
+    }
+
+    &.vertical:not(.content) {
+        align-self: stretch;
+        height: auto;
+        border-width: 0 1px 0 0;
+        margin-left: 4px;
+        margin-right: 4px;
+
+        &.middle {
+            margin: 8px 0;
+        }
+    }
+
+    &.vertical.content {
+        display: flex;
+        flex-shrink: 0;
+        align-self: stretch;
+        white-space: nowrap;
+        text-align: center;
+        flex-direction: column;
+
+        span {
+            padding: 0.2em 0px;
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            position: relative;
+            height: 100%;
+            left: 50%;
+            border-left: 1px solid var(--border-color);
+        }
+
+        &.left {
+            &::before {
+                height: 10%;
+            }
+
+            &::after {
+                height: 90%;
+            }
+        }
+
+        &.center {
+            &::before {
+                height: 100%;
+            }
+
+            &::after {
+                height: 100%;
+            }
+        }
+
+        &.right {
+            &::before {
+                height: 90%;
+            }
+
+            &::after {
+                height: 10%;
+            }
+        }
+
+        &.middle {
+            margin: 8px 0;
+        }
+    }
+}

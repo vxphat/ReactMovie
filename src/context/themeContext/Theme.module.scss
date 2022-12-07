@@ -1,0 +1,98 @@
+:root:has(.theme) {
+    --white-color: white;
+    --black-color: black;
+    --primary-color: rgb(44, 123, 229); //#2c7be5
+    --primary-hover-color: rgb(37, 105, 195);
+
+    // link color
+    --link-color: var(--primary-color);
+    --link-hover-color: rgb(35, 98, 183);
+
+    // error color
+    --error-color: rgb(252, 46, 46);
+}
+
+:root:has(.light-theme) {
+
+    // background color
+    --bg-color: rgb(237, 242, 249);
+    --bg-light-color: rgb(255, 255, 255);
+    --bg-dark-color: rgb(205, 205, 212);
+
+
+
+    // heading color
+    --heading-color: rgb(52, 64, 80);
+
+    // button color
+    --button-text-color: rgb(77, 89, 105);
+    --button-text-hover-color: rgb(64, 74, 87);
+    --button-color: var(--white-color);
+    --button-hover-color: rgb(249, 250, 253);
+    --button-box-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1), 0 2px 5px 0 rgba(43, 45, 80, 0.08), 0 1px 1.5px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+    --button-hover-box-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1), 0 2px 5px 0 rgba(43, 45, 80, 0.1), 0 3px 9px 0 rgba(43, 45, 80, 0.08), 0 1px 1.5px 0 rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+    --button-border-color: transparent;
+    --button-hover-border-color: transparent;
+    --button-disable-color: rgb(77, 89, 105);
+
+    // Select Menu
+    --select-bg-color: var(--bg-light-color);
+    --select-bg-hover: var(--bg-color);
+
+    // border color
+    --border-color: rgb(216, 226, 239);
+
+    // text color
+
+    --text-color: rgb(94, 110, 130);
+    --text-hover-color: rgb(35, 46, 60);
+    --text-light-color: rgb(116, 129, 148);
+    --box-shadow: 0 7px 14px 0 rgba(3, 12, 51, 0.15), 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+
+    // drop down color
+    --dropdown-bg: rgb(255, 255, 255);
+    --dropdown-hover-bg: rgb(249, 250, 253);
+
+}
+
+:root:has(.dark-theme) {
+    --primary-color: rgb(35, 98, 183);
+
+    // background color
+    --bg-color: rgb(11, 23, 39);
+    --bg-light-color: rgb(18, 30, 45);
+    --bg-dark-color: rgb(27, 27, 28);
+
+
+
+    // heading color
+    --heading-color: rgb(216, 226, 239);
+
+    // border color
+    --border-color: rgba(255, 255, 255, 0.05);
+
+    // button color
+    --button-text-color: rgb(182, 193, 210);
+    --button-text-hover-color: rgb(194, 204, 218);
+    --button-color: rgb(11, 23, 39);
+    --button-hover-color: transparent;
+    --button-box-shadow: 0 0 0 1px rgba(0, 8, 19, 0.3), 0 2px 5px 0 rgba(0, 13, 33, 0.5), 0 1px 1.5px 0 rgba(0, 8, 1, 0.48), 0 1px 2px 0 rgba(0, 8, 1, 0.4);
+    --button-hover-box-shadow: 0 0 0 1px rgba(0, 8, 19, 0.3), 0 3px 7px 0 rgba(0, 13, 33, 0.8), 0 1px 1.5px 0 #000801, 0 1px 2px 0 #000801;
+    --button-border-color: rgb(11, 23, 39);
+    --button-hover-border-color: transparent;
+    --button-disable-color: rgb(77, 89, 105);
+
+    // Select Menu
+    --select-bg-color: var(--bg-light-color);
+    --select-bg-hover: var(--bg-color);
+
+    // text color
+    --text-color: rgb(157, 169, 187);
+    --text-hover-color: rgb(237, 242, 249);
+    --text-light-color: rgb(116, 129, 148);
+    --box-shadow: 0 7px 14px 0 rgba(3, 12, 51, 0.15), 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+
+    // drop down color
+    --dropdown-bg: rgb(35, 46, 60);
+    --dropdown-hover-bg: rgba(11, 23, 39, 0.4);
+}
